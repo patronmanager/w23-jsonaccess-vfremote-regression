@@ -1,0 +1,28 @@
+<apex:page controller="W23VFRemote" showHeader="false" standardStylesheets="false">
+    <script>
+        function vfGetData() {
+
+            // This remoting call will use the page's timeout value
+            Visualforce.remoting.Manager.invokeAction(
+                '{!$RemoteAction.W23VFRemote.getData}',
+                handleResult,
+                {buffer:false,escape:false}
+            );
+        }
+
+        function handleResult(result, event) {
+            var timeDiv = document.getElementById('vfData');
+            if (event.status) {
+                timeDiv.innerHTML = result.message + ' Time: ' + result.current;
+            }
+            else {
+                timeDiv.innerHTML = event.message;
+            }
+        }
+
+        setInterval(vfGetData, 5000);
+
+    </script>
+    <div>The current time is:</div>
+    <div id="vfData">waiting for update...</div>
+</apex:page>

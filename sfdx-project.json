@@ -6,7 +6,7 @@
     }
   ],
   "name": "w23-jsonaccess-vfremote-regression",
-  "namespace": "",
+  "namespace": "PMGR",
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "55.0"
 }
