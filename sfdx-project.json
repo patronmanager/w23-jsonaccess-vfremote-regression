@@ -1,12 +1,18 @@
 {
-  "packageDirectories": [
-    {
-      "path": "force-app",
-      "default": true
+    "packageDirectories": [
+        {
+            "path": "force-app",
+            "default": true,
+            "package": "W23VFRemoteRegression",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT"
+        }
+    ],
+    "name": "w23-jsonaccess-vfremote-regression",
+    "namespace": "PMGR",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "55.0",
+    "packageAliases": {
+        "W23VFRemoteRegression": "0Ho1S0000004CAkSAM"
     }
-  ],
-  "name": "w23-jsonaccess-vfremote-regression",
-  "namespace": "PMGR",
-  "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "55.0"
 }
