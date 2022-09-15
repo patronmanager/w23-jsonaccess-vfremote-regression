@@ -13,6 +13,7 @@
     "sfdcLoginUrl": "https://login.salesforce.com",
     "sourceApiVersion": "55.0",
     "packageAliases": {
-        "W23VFRemoteRegression": "0Ho1S0000004CAkSAM"
+        "W23VFRemoteRegression": "0Ho1S0000004CAkSAM",
+        "W23VFRemoteRegression@0.1.0-2": "04t1S000000262WQAQ"
     }
 }
